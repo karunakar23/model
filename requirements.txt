@@ -33,3 +33,4 @@ tabulate==0.8.9
 threadpoolctl==2.1.0
 urllib3==1.26.3
 Werkzeug==1.0.1
+gunicorn==19.9.0
