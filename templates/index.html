@@ -13,7 +13,7 @@
         <form action="{{ url_for('predict')}}" method="post">
             <h1>Project created by Karunakar,Ramesh,Arvindh,Shiva</h1>
             <h2>Predictive analysis</h2>
-            <h3>Year</h3>
+            <h3>In which year did You buy the car</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
@@ -28,8 +28,8 @@
                 <option value="Individual">Individual</option>
             </select>
             <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
-                <option value="Mannual">Manual Car</option>
-                <option value="Automatic">Automatic Car</option>
+                <option value="Mannual">Manual Gear System Car</option>
+                <option value="Automatic">Automatic Gear System Car</option>
             </select>
             <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
             <br>
