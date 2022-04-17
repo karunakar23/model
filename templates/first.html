@@ -38,13 +38,13 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="https://source.unsplash.com/1600x900/?Cars" class="d-block w-100" alt="...">
+				<img src="https://source.unsplash.com/1600x900/?MachineLearning,cars" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h10>Sell Your Car At Best Price </h10>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="https://source.unsplash.com/1600x900/?MachineLearning" class="d-block w-100" alt="...">
+				<img src="https://source.unsplash.com/1600x900/?Sports,cars" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h10>Sell Your Car At Best Price </h10>
 				</div>
@@ -63,40 +63,42 @@
 	</div>
   <br></br>
   <h6 style="font-size:60px; text-align: center;">Welcome to CAR BECHO</h6>
-  <center>
-  <video width="400" height="280" loop="true" autoplay="autoplay" controls muted>
-  <source src="static/graphic.mp4" >
-</video>
-  </center>
    <br></br>
-  <div align="center">
-	   <form action="{{ url_for('predict')}}" method="post">
-
-            <h2>Predictive analysis</h2>
-            <h3>In which year did You buy the car</h3>
-            <input id="first" name="Year" type="number ">
-            <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
-            <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
-            <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
-            <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
-                <option value="Petrol">Petrol</option>
-                <option value="Diesel">Diesel</option>
-                <option value="Diesel">CNG</option>
-            </select>
-            <h3>Are you A Dealer or Individual</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
-                <option value="Dealer">Dealer</option>
-                <option value="Individual">Individual</option>
-            </select>
-            <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
-                <option value="Mannual">Manual Gear System Car</option>
-                <option value="Automatic">Automatic Gear System Car</option>
-            </select>
-            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
-            <br>
-        </form>
-  </div>
-  <br> </br>
 	<br> </br>
+  <div>
+	  <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Prediction Of Used Cars Using Machine Learning Models</h5>
+	   <img src="static/sale.jpg"  width="600" height="250">
+    <p class="card-text">Fill the details in the form</p>
+    <a href="used-cars" class="btn btn-primary">Predict Price</a>
+  </div>
+</div>
+	  <br>
+	  </br>
+	  <br>
+	  </br>
+
+	  <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">On-board Diagnostics(OBD) Of Cars</h5>
+	  <img src="static/qwe.jpg"  width="600" height="250">
+    <p class="card-text">On-board  Diagnostics Scanner  for car</p>
+    <a href="https://play.google.com/store/apps/details?id=org.prowl.torquefree" class="btn btn-primary">Car Diagnostic</a>
+  </div>
+</div>
+</br>
+	  </br>
+	  </br>
+  </div>
 	<div class="card bg-dark text-white">
 		<img src="static/footer.jpg" class="card-img" class="img-fluid" alt="..."/>
 		<div class="card-img-overlay">
