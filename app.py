@@ -6,9 +6,12 @@ import numpy as np
 import sklearn
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-model = pickle.load(open('car_price_predictor.pkl', 'rb'))
-@app.route('/',methods=['GET'])
+model = pickle.load(open('car_model.pkl', 'rb'))
+@app.route('/')
 def Home():
+    return render_template('first.html')
+@app.route('/used-cars')
+def used_cars():
     return render_template('home.html')
 standard_to = StandardScaler()
 @app.route("/predict", methods=['POST'])
@@ -27,7 +30,7 @@ def predict():
         else:
             Fuel_Type_Petrol=0
             Fuel_Type_Diesel=1
-        Year=2020-Year
+        Year=2022-Year
         Seller_Type_Individual=request.form['Seller_Type_Individual']
         if(Seller_Type_Individual=='Individual'):
             Seller_Type_Individual=1
